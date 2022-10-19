@@ -8,7 +8,7 @@ export const OrgCompleteArea = (props:any) => {
       <ul>
         {completeTodos.map((todo:string, index:number) => {
           return (
-            <div key={todo} className="list-row">
+            <div key={todo+index} className="list-row">
               <li>{todo}</li>
               <button onClick={() => onClickBack(index)}>戻す</button>
             </div>

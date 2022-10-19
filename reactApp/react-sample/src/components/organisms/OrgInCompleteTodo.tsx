@@ -9,7 +9,7 @@ export const OrgInCompleteTodos = (props:any) => {
       <ul>
         {inCompleteTodos.map((todo:string, index:number) => {
           return (
-            <div key={todo} className="list-row">
+            <div key={todo+index} className="list-row">
               <li>{todo}</li>
               <AtmButton buttonText="完了" onClick={() => onClickComplete(index)}/>
               <AtmButton buttonText="削除" onClick={() => onClickDelete(index)}/>
